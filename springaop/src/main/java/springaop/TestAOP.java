@@ -11,9 +11,9 @@ public class TestAOP {
 		/*
 		 * manager.getId(1); manager.createEmp(new EmpModel());
 		 */
-		System.out.println("calling m...");  
-        System.out.println(manager.m());  
-        System.out.println("calling k...");  
-        System.out.println(manager.k());  
+		//System.out.println("calling m...");  
+        manager.m();  
+        //System.out.println("calling k...");  
+        manager.k();  
 	}
 }
