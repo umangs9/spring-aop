@@ -11,9 +11,21 @@ public class TestAOP {
 		/*
 		 * manager.getId(1); manager.createEmp(new EmpModel());
 		 */
-		//System.out.println("calling m...");  
-        manager.m();  
-        //System.out.println("calling k...");  
-        manager.k();  
+		// System.out.println("calling m...");
+		// manager.m();
+		// System.out.println("calling k...");
+		// manager.k();
+		System.out.println("Calling validate");
+		try {
+			manager.validate(19);
+		} catch (Exception e) {
+			System.out.println("Exception is " + e);
+		}
+		System.out.println("Calling validate again");
+		try {
+			manager.validate(21);
+		} catch (Exception e) {
+			System.out.println("Exception  is " + e);
+		}
 	}
 }

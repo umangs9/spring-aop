@@ -9,6 +9,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmpManager {
 
+	
+	public void validate(int age)throws Exception{
+		if(age<18) {
+			throw new ArithmeticException("Not Valid age");
+		}
+		else {
+			System.out.println("Thanks for vote");
+		}
+	}
+	
 	public int m() {
 		System.out.println("m() method invoked");
 		return 2;
