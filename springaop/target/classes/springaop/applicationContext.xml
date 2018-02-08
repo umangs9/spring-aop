@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:aop="http://www.springframework.org/schema/aop"   
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd   
+       http://www.springframework.org/schema/aop   
+       http://www.springframework.org/schema/aop/spring-aop.xsd">  
+  
+  
+    <bean id="opBean" class="springaop.EmpManager">   </bean>  
+    <bean id="trackMyBean" class="springaop.EmpCRUDAspect"></bean>  
+      
+    <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>  
+          
+</beans>   
+<!-- <aop:aspectj-autoproxy>
+
+	<context:component-scan base-package="springaop" />
+	<bean id="loggingAspect" class="springaop.src.main.java1.springaop.EmpCRUDAspect" />
+	
+</aop:aspectj-autoproxy> -->

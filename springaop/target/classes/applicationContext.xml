@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop:aspectj-autoproxy>
+
+	<context:component-scan base-package="springaop" />
+	<bean id="loggingAspect" class="springaop.src.main.java1.springaop.EmpCRUDAspect" />
+</aop:aspectj-autoproxy>
