@@ -1,6 +1,7 @@
 package springaop;
 
 import org.aspectj.lang.JoinPoint;
+
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -39,7 +40,9 @@ public class EmpCRUDAspect {
 		System.out.println("Exception is " + error);
 		System.out.println("End of throwing advice...");
 	}
-
+	
+	
+                                                                                          
 	/*
 	 * @Pointcut("execution(* EmpManager.*(..))") public void pointcut1() {
 	 * System.out.println("Hello"); }
